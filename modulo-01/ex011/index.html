@@ -19,6 +19,21 @@
         <img src="imagens/foto-grande.png" alt="Imagem flexível">
     </picture>
     
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio controls preload="metadata" >
+        <!-- Adicionam-se sources para adicionar arquivos de outras extensões e garantir compatibilidade para o navegador-->
+
+        <source src="midia/islabonita-anjone.mp3" type="audio/mpeg">
+        <source src="midia/islabonita-anjone.ogg" type="audio/ogg">
+
+        <!-- Audios .WAV sao muito pesados e devem ser evitados -->
+
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/islabonita-anjone.mp3" download="islabonita-anjone.mp3" type="audio/mpeg">Clique aqui</a> para baixar o arquivo.</p>
+    </audio>
+
 </body>
 
 </html>
