@@ -1,25 +1,39 @@
 @charset "UTF-8";
 
 /*
-    HTML --> id | CSS --> #
-    HTML --> class | CSS --> .
+    HTML --> id | CSS --> # (NÃO PODE existir mais de 1 "id" com o mesmo valor)
+    HTML --> class | CSS --> . (PODE existir mais de 1 "class" com o mesmo valor)
 */
 
 body{
-    background-color: rgb(160, 253, 160);
+    background-color: #bafacf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color: rgb(5, 110, 10)
+    color: #297542
 }
 
-#principal{
+h1#principal{
     text-align: center;
-    background-color: rgb(5, 110, 10);
+    background-color: #297542;
     color: white;
 }
 
-h2{
-    color: rgb(51, 73, 42);
+.basico{
+    color: #56F78C;
+}
+
+.intermediario{
+    color: #b9f756;
+
+}
+
+.avancado{
+    color: #f75656;
+
+}
+
+.destaque{
+    background-color: rgba(163, 163, 71, 0.788);
 }
