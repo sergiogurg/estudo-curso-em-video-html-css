@@ -8,7 +8,12 @@ Cores:
 #0B9649
 #389662
 #10E36F
+#1A5C37
 */
+
+/* Importando fonte do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Importando fonte .OTF */
 
@@ -36,19 +41,21 @@ header{
 }
 
 header > h1{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
     text-align: center;
-    font-size: 34px;
-
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.301);
+    
     margin: 0px;
     padding-top: 50px;
 }
 
 header > h2{
-    font-size: 17px;
+    font-size: 19px;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
 
     width: 500px;
     margin: 20px auto 20px auto;
@@ -78,7 +85,7 @@ nav > a:hover{
 main{
     background-color: white;
 
-    width: 85%;
+    width: 80%;
     margin: 0px auto 0px auto;
     padding: 20px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.555);
@@ -106,6 +113,14 @@ main > p{
 img{
     display: block;
     margin: auto;
+}
+
+img#dandroids{
+    width: 100%;
+}
+
+img#irina{
+    width: 100%;
 }
 
 div#videocontainer{
@@ -152,6 +167,10 @@ ul{
     margin-left: 10%;
 }
 
+li::before{
+    content: '\2714  ';
+}
+
 li > img{
     display: inline;
     height: 14px;
@@ -171,4 +190,27 @@ footer{
 
 footer > p{
     margin: 0px;
+}
+
+/* Configurações de Textos e Links Externos */
+
+strong{
+    color: #1A5C37;
+}
+
+footer > p > strong{
+    color: white;
+}
+
+p > a{
+    color: #06351c;
+    background-color: #71ce9b;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 2px 6px 2px 6px;
+}
+
+p > a::after{
+    content: ' \1F517';
 }
