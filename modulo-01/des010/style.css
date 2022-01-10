@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* 
+Cores:
+
+#054B25
+#256341
+#0B9649
+#389662
+#10E36F
+*/
+
+/* Importando fonte .OTF */
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Configurações do BODY */
+
+body{
+    background-color: #a0f3c5;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+}
+
+/* Configurações do HEADER */
+
+header{
+    background-image: linear-gradient(#0ebd5c, #104228);
+    color: white;
+}
+
+header > h1{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+    text-align: center;
+    font-size: 34px;
+
+    margin: 0px;
+    padding-top: 50px;
+}
+
+header > h2{
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+
+    width: 500px;
+    margin: 20px auto 20px auto;
+}
+
+nav{
+    padding: 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: #b7dbc8;
+    font-weight: bold;
+
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav > a:hover{
+    background-color: #51b17c;
+    color: #256341;
+}
+
+/* Configurações do MAIN */
+
+main{
+    background-color: white;
+
+    width: 85%;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.555);
+    border-radius: 0px 0px 15px 15px;
+}
+
+main > h1{
+    font-family: 'Android', Verdana, Arial, sans-serif;
+    color: #104228;
+    margin-top: 0px;
+}
+
+main > h2{
+    font-family: 'Android', Verdana, Arial, sans-serif;
+    color: #256341;
+
+    background-image: linear-gradient(90deg, #71ce9b,  white);
+}
+
+main > p{
+    text-align: justify;
+    line-height: 32px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+div#videocontainer{
+    background-color: #104228;
+    padding: 30px;
+    margin: 0px -20px 0px -20px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+/* Configurações do EXTRA (Quer aprender mais?) */
+
+article{
+    background-color: #99ffc7;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.432);
+    
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+article > h2{
+    font-size: 22px;
+    color: white;
+    background-color: #187444;
+
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px;
+    padding: 10px;
+}
+
+article > p{
+    text-indent: 40px;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+li > img{
+    display: inline;
+    height: 14px;
+}
+
+/* Configurações do FOOTER */
+
+footer{
+    color: white;
+    background-color: #104228;
+    text-align: center;
+    font-size: 14px;
+
+    margin: 40px 0px 0px 0px;
+    padding: 10px;
+}
+
+footer > p{
+    margin: 0px;
+}
