@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: white;
+
+            margin: 10px;
+        }
+
+        main{
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* Largura do conteúdo DEVE SER MENOR que a tela de aparelhos smartphones antigos (aprox. 320px) */
+            /* min-width (244) + body-margin-left-and-right (10 + 10) + main-padding-left-and-right (20 + 20) + alguma coisa que não sei o que é (15) = 319px */
+            min-width: 244px;
+            max-width: 780px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Testando a Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga beatae est odio reprehenderit enim aspernatur blanditiis consequatur eum doloremque cum eius, minus earum. Maiores impedit quod dolore quaerat eum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repudiandae, neque reprehenderit mollitia commodi, assumenda totam officia pariatur laborum possimus ducimus, quidem dolore ex eius consequatur maiores expedita officiis eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis vitae minima qui provident soluta voluptatibus incidunt totam voluptas quis natus, consequatur molestias impedit fugiat sequi modi, itaque voluptates ad.</p>
+        <picture>
+            <source media="(max-width: 660px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci nemo error sint! Distinctio voluptates alias labore cum facere, amet cumque dolore, possimus nam iure vero nesciunt ullam. Illo, iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, error consequuntur accusamus assumenda expedita quo sint quaerat repellendus a fugit veniam explicabo, ratione optio at minus, pariatur esse suscipit maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia provident veniam quibusdam sint. Soluta modi, necessitatibus ut adipisci sed, placeat esse dolores rem cumque reprehenderit repudiandae consequuntur neque culpa aperiam?</p>
+    </main>
+
+</body>
+
+</html>
